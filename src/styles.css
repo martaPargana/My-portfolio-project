@@ -14,7 +14,7 @@ h1 {
   color: var(--primary-color);
   font-size: 96px;
   letter-spacing: 4px;
-  font-weight: 400;
+  font-weight: 450px;
 }
 
 h3 {
@@ -31,6 +31,7 @@ p {
   background-color: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
+  height: 100vh;
 }
 
 .hero p {
@@ -51,6 +52,7 @@ p {
   color: var(--primary-color);
   font-weight: 500;
   letter-spacing: 0.3px;
+  margin-top: 200px;
 }
 
 .btn-branding:hover {
