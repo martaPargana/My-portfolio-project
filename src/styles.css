@@ -1,0 +1,15 @@
+:root {
+ --primary-color: rgb(46, 49, 146);
+ --secondary-color: rgba(46, 49, 146, 0.601);
+}
+
+h1 {
+    font-family: "Jost", sans-serif;
+    color: var(--primary-color);
+    font-size: 48px;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+}
