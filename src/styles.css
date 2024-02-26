@@ -1,15 +1,47 @@
 :root {
- --primary-color: rgb(46, 49, 146);
- --secondary-color: rgba(46, 49, 146, 0.601);
+  --primary-color: rgb(46, 49, 146);
+  --secondary-color: hsl(240, 95%, 97%);
+  --heading-font-family: "Jost", sans-serif;
+  --default-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
 }
 
 h1 {
-    font-family: "Jost", sans-serif;
-    color: var(--primary-color);
-    font-size: 48px;
+  font-family: var(--heading-font-family);
+  color: var(--primary-color);
+  font-size: 96px;
+  letter-spacing: 4px;
+  font-weight: 400;
 }
 
-p {
-    font-family: "DM Sans", sans-serif;
-    font-size: 24px;
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 33px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.btn-branding {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-branding:hover {
+   color: var(--primary-color);
 }
