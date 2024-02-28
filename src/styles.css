@@ -1,6 +1,6 @@
 :root {
   --primary-color: rgb(46, 49, 146);
-  --secondary-color: hsl(240, 95%, 97%);
+  --secondary-color: hsl(53, 100%, 80%);
   --heading-font-family: "Jost", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -13,7 +13,6 @@ h1 {
   font-family: var(--heading-font-family);
   color: var(--primary-color);
   font-size: 96px;
-  letter-spacing: 4px;
   font-weight: 450px;
 }
 
@@ -25,26 +24,50 @@ h3 {
 
 p {
   font-size: 16px;
+  line-height 30px;
 }
 
+
 .hero {
-  background-color: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
   height: 100vh;
+  background-color: aquamarine;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .hero p {
   font-size: 36px;
-  margin: 0;
-  font-weight: 500;
+  font-weight: 600;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
 }
 
 .hero h2 {
   font-size: 22px;
-  font-weight: 350;
-  line-height: 2;
+  font-weight: 400;
   font-style: italic;
+}
+
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+}
+
+.about-section p {
+  font-size: 16px;
+}
+
+.about-section-content {
+ padding: 30px;
 }
 
 .btn-branding {
@@ -53,10 +76,13 @@ p {
   font-weight: 500;
   letter-spacing: 0.3px;
   margin-top: 20px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .btn-branding:hover {
   color: var(--primary-color);
+  background-color: hsla(264, 100%, 50%, 0.232);
   border: 1px solid var(--primary-color);
 }
 
@@ -64,35 +90,43 @@ p {
   padding: 30px 0px;
 }
 
+.img-fluid {
+  border-radius: 30px;
+  border: 2px solid var(--primary-color);
+}
 
 
 
-@media (max-width: 960px) {
+
+@media (max-width: 900px) {
   h1 {
-    font-size: 48px;
-    line-height: 1;
+    font-size: 55px;
+    line-height: 56px;
   }
 
   .hero {
     padding: 20px 10px;
-    height: 300px;
+    height: 350px;
   }
 
   .hero h2 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    margin-top: 15px;
   }
 
   .hero p {
-    font-size: 22px;
-    margin: 0;
+    font-size: 20px;
     font-weight: 500;
   }
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
   .btn-branding {
     font-size: 14px;
-    margin: 0px;
   }
 
   .project-description {
@@ -102,7 +136,7 @@ p {
 
   h3 {
     font-size: 32px;
-}
+  }
 
   p {
     font-size: 10;
