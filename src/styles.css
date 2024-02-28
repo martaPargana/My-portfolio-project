@@ -49,24 +49,24 @@ p {
   font-style: italic;
 }
 
-.about-section {
+.content-container {
   padding: 160px 20px;
 }
 
-.about-section h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
 }
 
-.about-section h2 {
+.content-container h2 {
   font-size: 18px;
 }
 
-.about-section p {
+.content-container p {
   font-size: 16px;
 }
 
-.about-section-content {
+.content {
  padding: 30px;
 }
 
@@ -120,7 +120,7 @@ p {
     font-weight: 500;
   }
 
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 0;
   }
