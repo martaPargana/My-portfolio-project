@@ -73,6 +73,7 @@ p {
 
 .content {
  padding: 30px;
+ text-align: center;
 }
 
 .btn-branding {
@@ -126,7 +127,6 @@ p {
   }
 
   .content {
-    text-align: center;
     padding: 0;
   }
 
