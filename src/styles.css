@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(46, 49, 146);
-  --secondary-color: hsl(53, 100%, 80%);
+  --secondary-color: hsl(50, 90%, 90%);
+  --accent-color:hsla(49, 95%, 61%, 0.30);
   --heading-font-family: "Jost", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -60,10 +61,10 @@ p {
 }
 
 .hero {
-  text-align: center;
   padding: 160px 20px;
   height: 100vh;
-  background-color: antiquewhite;
+  background-color: var(--secondary-color);
+  border-top: 2px solid var(--primary-color);
 }
 
 .hero p {
@@ -112,15 +113,15 @@ p {
   color: var(--primary-color);
   font-weight: 500;
   letter-spacing: 0.3px;
-  margin-top: 20px;
   border: 1px solid var(--primary-color);
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 .btn-branding:hover {
   color: var(--primary-color);
-  background-color: hsla(53, 100%, 80%, 0.5);
+   background-color: hsla(49, 95%, 61%, 0.10);
   border: 1px solid var(--primary-color);
+  
 }
 
 .project-description {
@@ -131,6 +132,41 @@ p {
   border-radius: 30px;
   border: 2px solid var(--primary-color);
 }
+
+footer h5 {
+  color: var(--primary-color);
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding:15px
+}
+
+footer .email-link {
+text-decoration: none;
+color: black;
+font-size: 18px;
+}
+
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+
+footer .social-links a{
+  margin: 0 20px;
+ color: var(--primary-color);
+ background-color: white;
+  padding: 4px 10px 3px 10px;
+  font-size: 22px;
+  border-radius: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover{
+   color:white;
+  background-color: var(--primary-color);
+}
+
 
 @media (max-width: 900px) {
   h1 {
