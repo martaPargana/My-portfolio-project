@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio project</title>
-
+    <title>Front-end developer - Marta Pargana's Work </title>
+    <meta
+      name="description"
+      content="Marta Pargana's work, a front-end engineer based in Portugal"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,32 +33,88 @@
     ></script>
   </head>
   <body>
+    <nav class="fixed-top">
+      <div class="container d-flex justify-content-between">
+        <a href="/" title="Homepage"
+          ><img
+            src="image/logo.png"
+            class="logo d-none d-md-block"
+            alt="Marta logo"
+        /></a>
+        <a href="/" title="Homepage"
+          ><img
+            src="image/logosmall.png"
+            class="logo d-block d-md-none"
+            alt="Marta small logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Marta">About</a>
+          </li>
+          <li>
+            <a class="active" href="/work.html" title="Marta's work">Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Marta's contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="content-container container">
-      <div class="content">
+      <div class="content text-center">
         <h1>Take a look at waht I've been working on!</h1>
         <div class="row">
           <div class="col-md-6 mb-4">
-            <img src="image/croissantpage.jpg" class="img-fluid mb-3" />
+            <img src="image/croissantpage.jpg" class="img-fluid mb-3" alt="Croissant Bakery Project preview"/>
             <h3 class="mb-1">Croissant Bakery Project</h3>
             <p class="text-muted">Built with HTML and CSS</p>
           </div>
           <div class="col-md-6 mb-4">
-            <img src="image/weatherapp.jpg" class="img-fluid mb-3" />
+            <img src="image/weatherapp.jpg" class="img-fluid mb-3" alt="Weather App Project preview"/>
             <h3 class="mb-1">Weather App Project</h3>
             <p class="text-muted">Built with HTML, CSS and JavaScrip</p>
           </div>
           <div class="col-md-6 mb-4">
-            <img src="image/presentationpage.jpg" class="img-fluid mb-3" />
+            <img src="image/presentationpage.jpg" class="img-fluid mb-3" alt="Presentation Page Project preview"/>
             <h3 class="mb-1">Presentation Page Project</h3>
             <p class="text-muted">Built with HTML and CSS</p>
           </div>
           <div class="col-md-6 mb-4">
-            <img src="image/dictionary.jpg" class="img-fluid mb-3" />
+            <img src="image/dictionary.jpg" class="img-fluid mb-3" alt="Translation App Project preview"/>
             <h3 class="mb-1">Translation App Project</h3>
             <p class="text-muted">Built with HTML, CSS and React</p>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="contact-box text-center mb-5 mt-5">
+        <h5 class="m-0">Work Inquiry</h5>
+        <p class="text-muted">Let's work together</p>
+        <div>
+          <a href="/contact.html" class="btn btn-branding" title="Contact Marta">Contact me</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-1">
+        <a href="mailto:marta_pargana@hotmail.com" class="email-link" title="Email Marta"
+          >marta_pargana@hotmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center mb-5">
+        <a href="https://www.github.com/marta" target="_blank" title="GitHub profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/@marta" target="_blank" title="Instagram profile">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/marta" target="_blank" title="facebook profile">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <p class="text-center text-muted">This project was coded by Marta, and it is <a class="open-source" href="https://github.com/martaPargana/My-portfolio-project" target="_blank" title="Visit the open-source">open-sourced</a>.</p>
+    </footer>
   </body>
 </html>

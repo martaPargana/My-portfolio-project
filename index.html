@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio project</title>
+    <meta
+      name="description"
+      content="Marta Pargana is a front-end engineer based in Portugal"
+    />
+    <title>Front-end developer - Marta Pargana</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -30,36 +34,43 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/"
-          ><img src="image/logo.jpg" class="logo d-none d-md-block"
+    <nav class="fixed-top">
+      <div class="container d-flex justify-content-between">
+        <a href="/" title="Homepage"
+          ><img
+            src="image/logo.png"
+            class="logo d-none d-md-block"
+            alt="Marta logo"
         /></a>
-        <a href="/"
-          ><img src="image/logosmall.jpg" class="logo d-block d-md-none"
+        <a href="/" title="Homepage"
+          ><img
+            src="image/logosmall.png"
+            class="logo d-block d-md-none"
+            alt="Marta small logo"
         /></a>
         <ul>
           <li>
-            <a class="active" href="/">Home</a>
+            <a class="active" href="/" title="Homepage">Home</a>
           </li>
           <li>
-            <a href="/about.html">About</a>
+            <a href="/about.html" title="About Marta">About</a>
           </li>
           <li>
-            <a href="/work.html">Work</a>
+            <a href="/work.html" title="Marta's work">Work</a>
           </li>
           <li>
-            <a href="/contact.html">Contact</a>
+            <a href="/contact.html" title="Marta's contact">Contact</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
     <div class="hero text-center">
       <p class="mt-5">Hello, I am</p>
       <h1 class="mt-3">Marta Pargana</h1>
       <h2 class="mb-5">Front-end developer based in Portugal</h2>
       <div>
-        <a href="/contact.html" class="btn btn-branding">Contact me</a>
+        <a href="/contact.html" class="btn btn-branding" title="Contact Marta">Contact me</a>
       </div>
     </div>
     <p class="text-center mt-5 mb-5">
@@ -68,7 +79,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="image/croissantpage.jpg" class="img-fluid" />
+          <img src="image/croissantpage.jpg" class="img-fluid" alt="Croissant Bakery Project preview"/>
         </div>
         <div class="col">
           <div class="project-description">
@@ -85,7 +96,7 @@
             <a
               href="https://shecodescroissant.netlify.app/photo"
               target="_blank"
-              class="btn btn-branding"
+              class="btn btn-branding" title="Launch project"
               >Learn more</a
             >
           </div>
@@ -93,7 +104,7 @@
       </div>
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="image/weatherapp.jpg" class="img-fluid" />
+          <img src="image/weatherapp.jpg" class="img-fluid" alt="Weather App Project preview"/>
         </div>
         <div class="col">
           <div class="project-description">
@@ -111,6 +122,7 @@
               href="https://forecastshecodesapp.netlify.app/"
               target="_blank"
               class="btn btn-branding"
+              title="Launch project"
               >Learn more</a
             >
           </div>
@@ -118,7 +130,7 @@
       </div>
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="image/presentationpage.jpg" class="img-fluid" />
+          <img src="image/presentationpage.jpg" class="img-fluid" alt="Presentation Page Project preview"/>
         </div>
         <div class="col">
           <div class="project-description">
@@ -136,6 +148,7 @@
               href="https://martashecodesportfolio.netlify.app/"
               target="_blank"
               class="btn btn-branding"
+              title="Launch project"
               >Learn more</a
             >
           </div>
@@ -147,25 +160,26 @@
         <h5 class="m-0">Work Inquiry</h5>
         <p class="text-muted">Let's work together</p>
         <div>
-          <a href="" class="btn btn-branding">Contact me</a>
+          <a href="/contact.html" class="btn btn-branding" title="Contact Marta">Contact me</a>
         </div>
       </div>
       <div class="d-flex justify-content-center mb-1">
-        <a href="mailto:marta_pargana@hotmail.com" class="email-link"
+        <a href="mailto:marta_pargana@hotmail.com" class="email-link" title="Email Marta"
           >marta_pargana@hotmail.com</a
         >
       </div>
       <div class="social-links d-flex justify-content-center mb-5">
-        <a href="https://www.github.com/marta" target="_blank">
+        <a href="https://www.github.com/marta" target="_blank" title="GitHub profile">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="https://www.instagram.com/@marta">
+        <a href="https://www.instagram.com/@marta" target="_blank" title="Instagram profile">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/marta">
+        <a href="https://www.facebook.com/marta" target="_blank" title="facebook profile">
           <i class="fa-brands fa-facebook"></i>
         </a>
       </div>
+      <p class="text-center text-muted">This project was coded by Marta, and it is <a class="open-source " href="https://github.com/martaPargana/My-portfolio-project" target="_blank" title="Visit the open-source">open-sourced</a>.</p>
     </footer>
   </body>
 </html>

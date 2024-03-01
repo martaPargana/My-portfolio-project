@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(46, 49, 146);
   --secondary-color: hsl(50, 90%, 90%);
-  --accent-color:hsla(49, 95%, 61%, 0.30);
+  --accent-color: hsla(49, 100%, 83%, 0.9);
   --heading-font-family: "Jost", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
 }
@@ -11,11 +11,13 @@ body {
 }
 
 .logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 nav {
   padding: 5px 0;
+  background-color: var(--accent-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 nav ul {
@@ -31,14 +33,14 @@ nav li {
 }
 
 nav a {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
-nav a:hover, .active {
+nav a:hover,
+.active {
   color: var(--primary-color);
-  font-weight: 500;
-  font-style: italic;
+  font-weight: 700;
   transition: all 80ms ease-in-out;
 }
 
@@ -56,15 +58,15 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .hero {
   padding: 160px 20px;
   height: 100vh;
   background-color: var(--secondary-color);
-  border-top: 2px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .hero p {
@@ -80,13 +82,18 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 70px 20px;
+}
+
+.container p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .content h1 {
-  font-size: 64px;
+  font-size: 50px;
   line-height: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 55px;
 }
 
 .content h2 {
@@ -104,8 +111,7 @@ p {
 }
 
 .content {
-  padding: 30px;
-  text-align: center;
+  margin: 30px;
 }
 
 .btn-branding {
@@ -119,9 +125,8 @@ p {
 
 .btn-branding:hover {
   color: var(--primary-color);
-   background-color: hsla(49, 95%, 61%, 0.10);
+  background-color: hsla(49, 95%, 61%, 0.1);
   border: 1px solid var(--primary-color);
-  
 }
 
 .project-description {
@@ -135,63 +140,90 @@ p {
 
 footer h5 {
   color: var(--primary-color);
+  font-size: 30px;
 }
 
 footer .contact-box {
   background-color: var(--secondary-color);
-  padding:15px
+  padding: 15px;
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
-footer .email-link {
-text-decoration: none;
-color: black;
-font-size: 18px;
-}
-
-footer .email-link:hover {
-  color: var(--primary-color);
-}
-
-footer .social-links a{
+footer .social-links a {
   margin: 0 20px;
- color: var(--primary-color);
- background-color: white;
+  color: var(--primary-color);
+  background-color: white;
   padding: 4px 10px 3px 10px;
   font-size: 22px;
   border-radius: 20px;
   transition: all 150ms ease-in-out;
 }
 
-footer .social-links a:hover{
-   color:white;
+footer .social-links a:hover {
+  color: white;
   background-color: var(--primary-color);
 }
 
+footer p {
+  font-size: 16px;
+}
+
+.open-source, .contact-links, .email-link {
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 @media (max-width: 900px) {
-  h1 {
-    font-size: 55px;
-    line-height: 56px;
-  }
 
+  .logo {
+  max-height: 40px;
+} 
   .hero {
     padding: 20px 10px;
     height: 350px;
   }
 
+ .hero h1 {
+    font-size: 50px;
+  }
+
   .hero h2 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
+    font-size: 13px;
   }
 
   .hero p {
     font-size: 20px;
-    font-weight: 500;
   }
 
   .content {
+    text-align: center;
     padding: 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+    margin-bottom: 20px !important;
+     line-height: 30px;
+  }
+
+  .container h2 {
+    font-size: 14px;
+  }
+
+  .container h3 {
+    font-size: 14px;
+  }
+
+  .container p {
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .btn-branding {
@@ -203,15 +235,15 @@ footer .social-links a:hover{
     text-align: center;
   }
 
-  h4 {
-    font-size: 32px;
-  }
-
-  p {
-    font-size: 10;
+  .project-description h4 {
+    font-size: 25px;
+    margin-bottom: 10px !important;
   }
 
   nav a {
     font-size: 12px;
   }
+.email-link {
+  font-size: 14px !important;
+}
 }
