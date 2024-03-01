@@ -169,6 +169,10 @@ footer p {
   font-size: 16px;
 }
 
+.copy {
+  font-size: 12px !important;
+}
+
 .open-source, .contact-links, .email-link {
   color: var(--primary-color);
   font-style: italic;
@@ -177,6 +181,10 @@ footer p {
 }
 
 @media (max-width: 900px) {
+
+  .copy {
+  font-size: 7px !important;
+}
 
   .logo {
   max-height: 40px;
